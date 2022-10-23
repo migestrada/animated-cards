@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.card {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 90vh;
+  transition: flex-grow .5s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.card-title {
+  position: relative;
+  top: 80vh;
+  left: 20px;
+  color: white;
+  font-weight: 900;
+  transition: opacity .7s;
+  opacity: 0;
+  text-shadow: 2px 2px black;
+  background-color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.show {
+  opacity: 100%;
+}
+
+.active {
+  flex-grow: 9;
+}
